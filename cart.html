@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>سبد خرید</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- هدر -->
+    <header>
+        <a href="index.html">ادامه خرید</a>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <h2>سبد خرید شما</h2>
+
+        <!-- لیست محصولات داخل سبد -->
+        <div id="cart-items">
+            <!-- محصولات انتخاب شده اینجا نمایش داده می‌شوند -->
+        </div>
+
+        <hr>
+
+        <!-- مجموع قیمت -->
+        <p>
+            مجموع کل:
+            <strong id="total-price">0</strong>
+            تومان
+        </p>
+
+        <!-- دکمه تایید نهایی -->
+        <button id="confirm-btn">
+            تایید نهایی
+        </button>
+
+    </main>
+
+
+    <!-- در cart.html -->
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سبد خرید - فروشگاه دیجیتال</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>سبد خرید</h1>
+            <div class="cart-icon">
+                <a href="index.html">
+                    <i class="fas fa-home"></i> بازگشت به فروشگاه
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div id="cart-container">
+            <!-- محتوای سبد خرید با JS پر می‌شود -->
+        </div>
+        
+        <div class="cart-summary">
+            <div class="summary-item">
+                <span>تعداد کالاها:</span>
+                <span id="total-items">0</span>
+            </div>
+            <div class="summary-item">
+                <span>مجموع:</span>
+                <span id="total-price">0 تومان</span>
+            </div>
+            <button id="checkout-btn" class="checkout-btn">
+                <i class="fas fa-credit-card"></i>
+                ادامه فرآیند خرید
+            </button>
+        </div>
+    </main>
+
+    <script src="js/product.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
+
+
+<script src="js/cart.js"></script>
+</body>
+</html>

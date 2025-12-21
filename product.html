@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>جزئیات محصول</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- هدر -->
+    <header>
+        <a href="index.html">بازگشت</a>
+
+        <!-- سبد خرید -->
+        <a href="cart.html">
+            🛒
+            <span id="cart-count">0</span>
+        </a>
+    </header>
+
+    <hr>
+
+    <!-- جزئیات محصول -->
+    <main>
+
+        <div id="product-detail">
+            <!-- نام محصول -->
+            <h2 id="product-name"></h2>
+
+            <!-- عکس‌ها -->
+            <div id="product-images">
+                <!-- چند عکس محصول اینجا می‌آید -->
+            </div>
+
+            <!-- توضیحات کامل -->
+            <p id="product-description"></p>
+
+            <!-- قیمت -->
+            <p>
+                قیمت:
+                <strong id="product-price"></strong>
+            </p>
+        </div>
+
+        <hr>
+
+        <!-- انتخاب تعداد و افزودن به سبد -->
+        <div>
+            <label for="quantity">تعداد:</label>
+            <input type="number" id="quantity" value="1" min="1">
+
+            <button id="add-to-cart-btn">
+                افزودن به سبد خرید
+            </button>
+        </div>
+
+    </main>
+<script src="js/products.js"></script>
+<script src="js/product.js"></script>
+</body>
+</html>
